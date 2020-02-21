@@ -166,6 +166,11 @@ nav {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
 }
 nav h1 {
   display: flex;
@@ -183,9 +188,15 @@ nav .links {
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
-  width: 100%;
+  width: 80%;
   margin: 1vh 25%;
   font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  nav .links {
+    justify-content: space-evenly;
+    margin: 1vh 20%;
+  }
 }
 nav .links a {
   text-decoration: none;
@@ -200,6 +211,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
