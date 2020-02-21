@@ -7,6 +7,19 @@
     flex-wrap:@wrap;
 }
 
-.custom-btn(){
+.custom-btn(@bg-color: @header-font-color, @width:100px, @font-color:#fff){
+    .flex();
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 35px;
+    font-size: 2rem;
+    border-radius: 5px;
+    color:@font-color;
     
+    &:hover{
+        background-color:@font-color;
+        color:@bg-color;
+    }
 }

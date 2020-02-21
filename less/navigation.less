@@ -1,1 +1,25 @@
 // Navigation code here
+nav {
+
+    .flex(@wrap:wrap);
+
+    h1{
+      .flex();
+      width:100%;
+      font-size:4rem;
+      margin: 1vh;
+    }
+
+    .links{
+      .flex(@justify:space-around);
+      width:100%;
+      margin: 1vh 25%;
+      font-size:1.5rem;
+
+      a{
+        text-decoration:none;
+        color:@nav-font;
+      }
+
+    }
+  }
